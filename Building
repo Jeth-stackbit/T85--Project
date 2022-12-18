@@ -93,7 +93,7 @@ int main(int argc, char** argv) {
 	//Initialize GLUT
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-	glutInitWindowSize(400, 400);
+	glutInitWindowSize(1280, 800);
 	
 	//Create the window
 	glutCreateWindow("Camera & Events - github.com/Jaeger47/Learning-OpenGL");
@@ -151,35 +151,42 @@ void display() {
 	glPushMatrix();
 	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
 	glTranslatef(-3.0f, -3.0f, -3.0f); //location
-	/**glRotatef(_angle, 0.0f, 1.0f, 0.0f);**/ //rotation animation
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f); //rotation animation
+	cube();
+	glPopMatrix();
+
+	glPushMatrix();
+	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
+	glTranslatef(-3.0f, -3.0f, 1.0f); //location
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f);/ //rotation animation
 	cube();
 	glPopMatrix();
    
 	glPushMatrix();
 	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
 	glTranslatef(1.0f, -3.0f, 1.0f); //location
-	/**glRotatef(_angle, 0.0f, 1.0f, 0.0f);**/ //rotation animation
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f);/ //rotation animation
 	cube();
 	glPopMatrix();
 
 	glPushMatrix();
 	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
 	glTranslatef(4.0f, -3.0f, 1.0f); //location
-	/**glRotatef(_angle, 0.0f, 1.0f, 0.0f);**/ //rotation animation
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f);//rotation animation
 	cube();
 	glPopMatrix();
 
 	glPushMatrix();
 	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
 	glTranslatef(1.0f, -3.0f, -6.0f); //location
-	/**glRotatef(_angle, 0.0f, 1.0f, 0.0f);**/ //rotation animation
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f);**/ //rotation animation
 	cube();
 	glPopMatrix();
 
 	glPushMatrix();
 	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
 	glTranslatef(1.0f, -3.0f, -3.0f); //location
-	/**glRotatef(_angle, 0.0f, 1.0f, 0.0f);**/ //rotation animation
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f); //rotation animation
 	cube();
 	glPopMatrix();
 
@@ -188,14 +195,28 @@ void display() {
 	glPushMatrix();
 	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
 	glTranslatef(5.0f, -3.0f, 3.0f); //location
-	/**glRotatef(_angle, 0.0f, 1.0f, 0.0f);**/ //rotation animation
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f); //rotation animation
 	cube();
 	glPopMatrix();
 
 	glPushMatrix();
 	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
 	glTranslatef(4.0f, -3.0f, 1.0f); //location
-	/**glRotatef(_angle, 0.0f, 1.0f, 0.0f);**/ //rotation animation
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f); //rotation animation
+	cube();
+	glPopMatrix();
+
+	glPushMatrix();
+	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
+	glTranslatef(4.0f, -3.0f, 4.0f); //location
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f); //rotation animation
+	cube();
+	glPopMatrix();
+
+	glPushMatrix();
+	glColor3f(0.0f, 0.0f, 1.0f);//add color material to object
+	glTranslatef(4.0f, -3.0f, 6.0f); //location
+	//glRotatef(_angle, 0.0f, 1.0f, 0.0f); //rotation animation
 	cube();
 	glPopMatrix();
 
@@ -348,6 +369,10 @@ void cube(){
 		glVertex3f(1.0f, -1.0f, -1.5f);
 		glVertex3f(-1.0f, -1.0f, -1.5f);
 	glEnd();
+
+	
+
+
 
 	
 }
